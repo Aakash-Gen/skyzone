@@ -44,18 +44,34 @@ const App = () => {
     </div>
 
     <div className="bg-gray-50">
-      <div className="text-center">
+      <div className="text-center mb-10">
         <div className="text-black font-semibold text-2xl mb-2">Supercar Models</div>
         <div className="text-black font-bold text-4xl mb-2">Explore Our Exotic collection</div>
         <div className="text-gray-500 ">Indulge in the ultimate driving experience with our exquisite selection of supercars</div>
       </div>
-      <div className="grid grid-cols-3 gap-10 bg-gray-500 h-96">
-        <div className="bg-green-500">hi</div>
-        <div className="bg-red-500">hi</div>
-        <div className="bg-yellow-500">hi</div>
+      <div className="grid md:grid-cols-3 sm:grid-col-1 gap-10 bg-gray-50 h-96">
+        <div className="flex flex-col justify-center items-center gap-2">
+          <CarTab name="LaFerrari"/>
+          <CarTab name="Mclaren 720s"/>
+          <CarTab name="Ferrari Roma"/>
+          <CarTab name="Porsche 911"/>
+          <CarTab name="lamborghini Revuelto"/>
+          <CarTab name="Bugatti Chiron"/>
+          <CarTab name="Aston Martin Valhalla"/>
+        </div>
+        <img className="flex justify-center" src="public/laferrari-jaguar-cars-enzo-ferrari-ferrari-removebg-preview.png" alt="car" />
+        <div className="bg-yellow-500">
+
+        </div>
       </div>
     </div>
     </>
+  )
+}
+
+const CarTab = (props) => {
+  return(
+    <div className="bg-gray-200 py-[15px] w-[250px] text-center text-black font-bold text-[20px] font-poppins">{props.name}</div>
   )
 }
 

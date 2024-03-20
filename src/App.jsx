@@ -12,9 +12,9 @@ const App = () => {
   return (
     <>
 
-    {/* <Exp/>
+    <Exp/>
 
-    <Ananya/> */}
+    <Ananya/>
 
 {/*     
     <div className="flex-col w-96 m-10 rounded-sm shadow-2xl">
@@ -84,30 +84,6 @@ const App = () => {
       <CarCard/>
       <CarCard/>
       <CarCard/>
-      {/* <div className="flex flex-col rounded-xl shadow-md bg-red-900">
-        <img className="rounded-t-xl" src={link} alt="description" />
-        <div className="rounded-b-xl bg-white flex-2 p-5">
-          <div className="flex justify-between text-xl font-bold">
-            <div>
-              Ferrari Roma, 2024
-            </div>
-            <div className="font-black text-red-500 text-xl">
-              $200k
-            </div>
-          </div>
-          <div className="bg-gray-100 rounded-lg mt-3 pl-3 pr-3 pt-2 pb-2 flex justify-evenly">
-            <div className="bg-white rounded-full h-10 flex justify-center items-center pl-4 pr-4 gap-1"><IoIosSpeedometer size={20} color="black"/>180</div>
-            <div className="bg-white rounded-full h-10 flex justify-center items-center pl-4 pr-4 gap-1"><BsFillFuelPumpFill size={20} color="orange"/>8.2</div>
-            <div className="bg-white rounded-full h-10 flex justify-center items-center pl-4 pr-4 gap-1"><MdAirlineSeatReclineNormal size={20} color="brown"/>2</div>
-            <div className="bg-white rounded-full h-10 flex justify-center items-center pl-4 pr-4 gap-1"><ImPower size={20} color="red"/>611</div>
-          </div>
-          <div className="font-sans pt-2.5">
-            The Italian elegance makes a comeback.
-            The Ferrari Roma, the new mid-front-engined 2+ coupé, 
-            features refined proportions and timeless design.
-          </div>
-        </div>
-      </div> */}
     </div>
     </>
   )

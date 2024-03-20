@@ -62,25 +62,34 @@ const App = () => {
         <CarCard/>
         <CarCard/>
       </div>
-
     <div className="bg-gray-50">
       <div className="text-center mb-10">
         <div className="text-black font-semibold text-2xl mb-2">Supercar Models</div>
         <div className="text-black font-bold text-4xl mb-2">Explore Our Exotic collection</div>
         <div className="text-gray-500 ">Indulge in the ultimate driving experience with our exquisite selection of supercars</div>
       </div>
-      <div className="grid md:grid-cols-3 sm:grid-col-1 gap-10 bg-gray-50 h-96">
+      <div className="grid md:grid-cols-3 sm:grid-col-1 gap-10 bg-gray-50 h-96 mb-28">
         <div className="flex flex-col justify-center items-center gap-2">
           <CarTab name="LaFerrari"/>
           <CarTab name="Mclaren 720s"/>
           <CarTab name="Ferrari Roma"/>
           <CarTab name="Porsche 911"/>
-          <CarTab name="lamborghini Revuelto"/>
+          <CarTab name="Lamborghini Revuelto"/>
           <CarTab name="Bugatti Chiron"/>
           <CarTab name="Aston Martin Valhalla"/>
         </div>
-        <img className="flex justify-center" src="/laferrari-jaguar-cars-enzo-ferrari-ferrari-removebg-preview.png" alt="car" />
-        <div className="bg-yellow-500">
+        <div className="flex items-center">
+          <img className="flex justify-center " src="/laferrari-jaguar-cars-enzo-ferrari-ferrari-removebg-preview.png" alt="car" />
+        </div>
+        <div className=" flex items-center ml-10">
+          <div className=" bg-gray-50 flex flex-col border-2 border-gray-500 w-[250px] h-96">
+          <CarDetail title="Brand" desc="Ferrari" />
+          <CarDetail title="Model" desc="LaFerrari" /> 
+          <CarDetail title="Year" desc="2013" />   
+          <CarDetail title="HP" desc="1036" />   
+          <CarDetail title="0-60" desc="2.4s" />
+          <div className="text-center font-bold text-4xl p-4">$3,057,308</div>
+          </div>
 
         </div>
       </div>
@@ -91,7 +100,15 @@ const App = () => {
 
 const CarTab = (props) => {
   return(
-    <div className="bg-gray-200 py-[15px] w-[250px] text-center text-black font-bold text-[20px] font-poppins">{props.name}</div>
+    <div className="bg-gray-200 py-[15px] w-[250px] px-7 text-black font-semibold text-[18px] font-poppins">{props.name}</div>
+  )
+}
+const CarDetail =(props) =>{
+  return(
+    <div className="flex justify-evenly gap-10 border-b-2 border-gray-500 p-4 font-semibold font-poppins">
+            <div>{props.title}</div>
+            <div>{props.desc}</div>
+    </div>
   )
 }
 

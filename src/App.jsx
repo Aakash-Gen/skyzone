@@ -79,7 +79,7 @@ const App = () => {
           <CarTab name="Bugatti Chiron"/>
           <CarTab name="Aston Martin Valhalla"/>
         </div>
-        <img className="flex justify-center" src="public/laferrari-jaguar-cars-enzo-ferrari-ferrari-removebg-preview.png" alt="car" />
+        <img className="flex justify-center" src="/laferrari-jaguar-cars-enzo-ferrari-ferrari-removebg-preview.png" alt="car" />
         <div className="bg-yellow-500">
 
         </div>

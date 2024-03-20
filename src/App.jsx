@@ -83,7 +83,10 @@ const App = () => {
       <CarCard2/>
       <CarCard2/>
       <CarCard/>
-      <CarCard2/>
+      <CarCard/>
+      <CarCard/>
+      <CarCard/>
+      {/* <CarCard2/> */}
     </div>
     </>
   )
@@ -94,7 +97,7 @@ const CarCard = (props) => {
   var link = "https://www.amalgamcollection.com/cdn/shop/products/DSCF9341WIDEEDIT_2000x850_crop_center.jpg?v=1626887558";
   return (
       <div className="flex flex-col rounded-xl shadow-md bg-red-900">
-        <img className="rounded-t-xl max-h-30" src={link} alt="description" />
+        <img className="rounded-t-xl flex-1 object-cover" src={link} alt="description" />
         <div className="rounded-b-xl bg-white flex-2 p-5">
           <div className="flex justify-between text-xl font-bold">
             <div>
@@ -124,7 +127,7 @@ const CarCard2 = (props) => {
   // var link = "https://www.amalgamcollection.com/cdn/shop/products/DSCF9341WIDEEDIT_2000x850_crop_center.jpg?v=1626887558";
   return (
       <div className="flex flex-col rounded-xl shadow-md bg-red-900">
-        <img className="rounded-t-xl max-h-30 object-contain" src={audiLink} alt="description" />
+        <img className="rounded-t-xl flex-1 h-full max-h-56 object-cover" src={audiLink} alt="description" />
         <div className="rounded-b-xl bg-white flex-2 p-5">
           <div className="flex justify-between text-xl font-bold">
             <div>

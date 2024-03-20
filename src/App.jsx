@@ -13,11 +13,15 @@ const App = () => {
     <>
       <div className="fixed top-0 w-full h-14 bg-[#0A0A0A] flex justify-between items-center pl-6 pr-6 z-10"> 
         <SiFerrari size={30} color="white"/>
-        <div className="text-white">Racing</div>
-        <div className="text-white">Sports Car</div>
-        <div className="text-white">Collections</div>
-        <div className="text-white">Experiences</div>
-        <div className="text-white">About Us</div>
+      <div className="flex gap-12">
+        <div className="text-white">Home</div>
+        <div className="text-white" >Collection</div>
+        <div className="text-white" >Reviews</div>
+        <div className="text-white" >About Us</div>
+      </div>
+      <div className="text-white">
+        Contact us
+      </div>
       </div>
 
       <div className="bg-black relative">
@@ -57,9 +61,32 @@ const App = () => {
         <CarCard/>
         <CarCard/>
       </div>
+    <div className="bg-gray-50 p-10 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <CarCard audi={true}/>
+      <CarCard2/>
+      <CarCard2/>
+      <CarCard/>
+      <CarCard/>
+      <CarCard/>
+      <CarCard/>
+    </div>
+
+    <div className="bg-gray-50">
+      <div className="text-center">
+        <div className="text-black font-semibold text-2xl mb-2">Supercar Models</div>
+        <div className="text-black font-bold text-4xl mb-2">Explore Our Exotic collection</div>
+        <div className="text-gray-500 ">Indulge in the ultimate driving experience with our exquisite selection of supercars</div>
+      </div>
+      <div className="grid grid-cols-3 gap-10 bg-gray-500 h-96">
+        <div className="bg-green-500">hi</div>
+        <div className="bg-red-500">hi</div>
+        <div className="bg-yellow-500">hi</div>
+      </div>
+    </div>
     </>
   )
 }
+
 
 const CarCard = (props) => {
   // var audiLink = "https://images.hindustantimes.com/auto/img/2023/09/18/1600x900/Audi_Q5_Limited_Edition-1_1695015301793_1695015306637.jpg";
@@ -121,6 +148,8 @@ const CarCard2 = (props) => {
       </div>
   )
 }
+
+
 
 
 export default App

@@ -5,17 +5,21 @@ import { MdAirlineSeatReclineNormal } from "react-icons/md";
 import { ImPower } from "react-icons/im";
 import { flushSync } from "react-dom";
 import { SiFerrari } from "react-icons/si";
+import { CiDollar } from "react-icons/ci";
+
 // https://react-icons.github.io/react-icons/search/#q=power
 
 const App = () => {
   var link = "https://www.amalgamcollection.com/cdn/shop/products/DSCF9341WIDEEDIT_2000x850_crop_center.jpg?v=1626887558";
+  var porscheBig = "https://images.pistonheads.com/nimg/47438/blobid0.jpg";
+  var ferrariBig = "https://bicollection.ch/wp-content/uploads/2021/06/FerrariRoma-GZ9A2523022.jpg";
 
   return (
     <>
       <div className="fixed top-0 w-full h-14 bg-[#0A0A0A] flex justify-between items-center pl-6 pr-6 z-10"> 
         <SiFerrari size={30} color="white"/>
       <div className="flex gap-12">
-        <div className="text-white">Home</div>
+        <div className="text-white hover:cursor-pointer hover:underline">Home</div>
         <div className="text-white" >Collection</div>
         <div className="text-white" >Reviews</div>
         <div className="text-white" >About Us</div>
@@ -48,12 +52,12 @@ const App = () => {
           </div>
         </div>
         <div className="bg-blue-300">
-          <img src="https://bicollection.ch/wp-content/uploads/2021/06/FerrariRoma-GZ9A2523022.jpg" alt="" className="h-full object-cover max-h-max"/>
+          <img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/news/2023/10_16_revuelto/cover_m.jpg" alt="" className="h-full object-cover max-h-max"/>
         </div>
       </div>
 
 
-      <div className="bg-gray-50 grid sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 md:px-14">
+      {/* <div className="bg-gray-50 grid sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 md:px-14">
         <CarCard audi={true}/>
         <CarCard2/>
         <CarCard2/>
@@ -61,7 +65,48 @@ const App = () => {
         <CarCard/>
         <CarCard/>
         <CarCard/>
+      </div> */}
+      <div className="bg-white h-[100vh]">
+        <div className="bg-black relative">
+          <img className="w-full" src="/supercar-lineup.jpg" alt="" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black opacity-80">
+          <div className="absolute inset-0 flex flex-col justify-around items-center text-white font-bold text-5xl">
+            <div>FERRARI ROMA - LA NUOVA DOLCE VITA</div>
+            <div></div><div></div><div></div>
+          </div>
+          </div>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-10 px-14 my-7 items-center">
+          <div className="bg-gray-100 border rounded-3xl flex justify-between px-4">
+            <CiDollar size={150}/>
+            <div className="flex flex-col justify-around m-4">
+              <div className="text-xl font-bold">All Inclusive Pricing</div>
+              <div>Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.</div>
+            </div>
+          </div>
+          <div className="bg-gray-100 border  rounded-3xl flex justify-between px-4">
+            <CiDollar size={150}/>
+            <div className="flex flex-col justify-around m-4">
+              <div className="text-xl font-bold">All Inclusive Pricing</div>
+              <div>Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.</div>
+            </div>
+          </div>
+          <div className="bg-gray-100 border  rounded-3xl flex justify-between px-4">
+            <CiDollar size={150}/>
+            <div className="flex flex-col justify-around m-4">
+              <div className="text-xl font-bold">All Inclusive Pricing</div>
+              <div>Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.</div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
+
+      
+
+
     <div className="bg-gray-50">
       <div className="text-center mb-10">
         <div className="text-black font-semibold text-2xl mb-2">Supercar Models</div>

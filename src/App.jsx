@@ -28,16 +28,35 @@ const App = () => {
         </div>
       </div>
 
+      <div className="bg-white h-[85vh] flex flex-col-reverse lg:grid lg:grid-cols-2 lg:px-[170px] lg:py-20 gap-2 lg:gap-10">
+        <div className="flex flex-col justify-center gap-2 lg:gap-5 mx-4 my-2">
+          <div className="text-3xl font-black font-sans">
+            Embodying la dolce vita
+          </div>
+          <div>
+            Embodying la dolce vita, the Ferrari Roma captures the essence of Roman 
+            grandeur in a modern masterpiece. This mid-front engined coupé seamlessly 
+            blends timeless design with exhilarating performance. Its sculpted form, 
+            inspired by the carefree spirit of 1950s and 60s Rome, thrums with the power 
+            of an award-winning twin-turbo V8. The Ferrari Roma promises an unforgettable 
+            experience, where elegance meets exhilarating speed on every journey.
+          </div>
+        </div>
+        <div className="bg-blue-300">
+          <img src="https://bicollection.ch/wp-content/uploads/2021/06/FerrariRoma-GZ9A2523022.jpg" alt="" className="h-full object-cover max-h-max"/>
+        </div>
+      </div>
 
-    <div className="bg-gray-50 p-10 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <CarCard audi={true}/>
-      <CarCard2/>
-      <CarCard2/>
-      <CarCard/>
-      <CarCard/>
-      <CarCard/>
-      <CarCard/>
-    </div>
+
+      <div className="bg-gray-50 p-10 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <CarCard audi={true}/>
+        <CarCard2/>
+        <CarCard2/>
+        <CarCard/>
+        <CarCard/>
+        <CarCard/>
+        <CarCard/>
+      </div>
     </>
   )
 }

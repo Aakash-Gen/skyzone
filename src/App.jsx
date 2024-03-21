@@ -66,7 +66,7 @@ const App = () => {
         <CarCard/>
         <CarCard/>
       </div> */}
-      <div className="bg-white h-[100vh]">
+      <div className="bg-white min-h-screen">
         <div className="bg-black relative">
           <img className="w-full" src="/supercar-lineup.jpg" alt="" />
           <div className="absolute inset-0 bg-gradient-to-b from-black opacity-80">
@@ -107,13 +107,13 @@ const App = () => {
       
 
 
-    <div className="bg-gray-50">
+    <div className="bg-white min-h-screen">
       <div className="text-center mb-10">
         <div className="text-black font-semibold text-2xl mb-2">Supercar Models</div>
         <div className="text-black font-bold text-4xl mb-2">Explore Our Exotic collection</div>
         <div className="text-gray-500 ">Indulge in the ultimate driving experience with our exquisite selection of supercars</div>
       </div>
-      <div className="grid md:grid-cols-3 sm:grid-col-1 gap-10 bg-gray-50 h-96 mb-28">
+      <div className="grid md:grid-cols-3 sm:grid-col-1 gap-10 bg-white ">
         <div className="flex flex-col justify-center items-center gap-2">
           <CarTab name="LaFerrari"/>
           <CarTab name="Mclaren 720s"/>
@@ -126,8 +126,8 @@ const App = () => {
         <div className="flex items-center">
           <img className="flex justify-center " src="/laferrari-jaguar-cars-enzo-ferrari-ferrari-removebg-preview.png" alt="car" />
         </div>
-        <div className=" flex items-center ml-10">
-          <div className=" bg-gray-50 flex flex-col border-2 border-gray-500 w-[250px] h-96">
+        <div className=" flex justify-center items-center">
+          <div className=" bg-gray-50 flex flex-col border-2 border-gray-500 w-[250px] h-auto">
           <CarDetail title="Brand" desc="Ferrari" />
           <CarDetail title="Model" desc="LaFerrari" /> 
           <CarDetail title="Year" desc="2013" />   

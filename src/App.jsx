@@ -61,7 +61,7 @@ const App = () => {
         </div>
       </div>
 
-      <div className="bg-white h-[100vh]">
+      <div className="bg-white min-h-screen">
         <div className="bg-black relative">
           <img className="w-full" src="/supercar-lineup.jpg" alt="" />
           <div className="absolute inset-0 bg-gradient-to-b from-black opacity-80">
@@ -98,63 +98,57 @@ const App = () => {
 
 
       </div>
-        <div className="bg-gray-200 grid sm:grid-cols-2 lg:grid-cols-10 p-10 lg:p-20 gap-10">
-          
-          {/* skyzone dealership */}
-          <div className="flex flex-col text-black gap-6 text-md col-span-3">
-            <div className="text-3xl font-black">
-              Skyzone Dealership
-            </div>
-            <div>
-              We offers a big range of vehicles for all your driving needs. 
-              We have the perfect car to meet your needs.
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-2"> <FaPhoneAlt /> +91 (768)30 89932</div>
-              <div className="flex items-center gap-2"> <MdOutlineMail /> dealers@skyzone.com</div>
-              <div className="flex items-center gap-2"> <FaLocationDot />65/13, Dwarka, IN</div>
-            </div>
-          </div>
 
-          {/* company */}
-          <div className="flex flex-col text-black gap-5 text-md col-span-2">
-            <div className="text-3xl font-bold">
-              Company
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-2"> Careers</div>
-              <div className="flex items-center gap-2"> Blogs</div>
-              <div className="flex items-center gap-2">Blog</div>
-            </div>
-          </div>
+      
 
-          {/* working hours */}
-          <div className="flex flex-col text-black gap-5 text-md col-span-2">
-            <div className="text-3xl font-bold">Working Hours</div>
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-2">Mon - Fri: 9:00AM - 9:00PM</div>
-              <div className="flex items-center gap-2">Sat: 9:00AM - 19:00PM</div>
-              <div className="flex items-center gap-2">Sun: Closed</div>
-            </div>
-          </div>
 
-          {/* subscribe */}
-          <div className="flex flex-col text-black gap-5 text-md col-span-3">
-            <div className="text-3xl font-bold">Subscription</div>
-            <div className="flex flex-col gap-3">
-              <div className="flex items-center">Subscribe your Email address for latest news & updates.</div>
-              <input type="email" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-black focus:border-black block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Email" required />
-              <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Subscribe</button>
-            </div>
-          </div>
+    <div className="bg-white min-h-screen">
+      <div className="text-center mb-10">
+        <div className="text-black font-semibold text-2xl mb-2">Supercar Models</div>
+        <div className="text-black font-bold text-4xl mb-2">Explore Our Exotic collection</div>
+        <div className="text-gray-500 ">Indulge in the ultimate driving experience with our exquisite selection of supercars</div>
       </div>
+      <div className="grid md:grid-cols-3 sm:grid-col-1 gap-10 bg-white ">
+        <div className="flex flex-col justify-center items-center gap-2">
+          <CarTab name="LaFerrari"/>
+          <CarTab name="Mclaren 720s"/>
+          <CarTab name="Ferrari Roma"/>
+          <CarTab name="Porsche 911"/>
+          <CarTab name="Lamborghini Revuelto"/>
+          <CarTab name="Bugatti Chiron"/>
+          <CarTab name="Aston Martin Valhalla"/>
+        </div>
+        <div className="flex items-center">
+          <img className="flex justify-center " src="/laferrari-jaguar-cars-enzo-ferrari-ferrari-removebg-preview.png" alt="car" />
+        </div>
+        <div className=" flex justify-center items-center">
+          <div className=" bg-gray-50 flex flex-col border-2 border-gray-500 w-[250px] h-auto">
+          <CarDetail title="Brand" desc="Ferrari" />
+          <CarDetail title="Model" desc="LaFerrari" /> 
+          <CarDetail title="Year" desc="2013" />   
+          <CarDetail title="HP" desc="1036" />   
+          <CarDetail title="0-60" desc="2.4s" />
+          <div className="text-center font-bold text-4xl p-4">$3,057,308</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
     </>
   )
 }
 
 const CarTab = (props) => {
   return(
-    <div className="bg-gray-200 py-[15px] w-[250px] text-center text-black font-bold text-[20px] font-poppins">{props.name}</div>
+    <div className="bg-gray-200 py-[15px] w-[250px] px-7 text-black font-semibold text-[18px] font-poppins">{props.name}</div>
+  )
+}
+const CarDetail =(props) =>{
+  return(
+    <div className="flex justify-evenly gap-10 border-b-2 border-gray-500 p-4 font-semibold font-poppins">
+            <div>{props.title}</div>
+            <div>{props.desc}</div>
+    </div>
   )
 }
 

@@ -9,6 +9,7 @@ import { CiDollar } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import CarCard from "./components/CarCard";
 
 // https://www.pexels.com/video/video-of-a-luxury-sports-car-5309351/
 // https://www.pexels.com/video/a-lamborghini-car-on-the-road-7727416/
@@ -66,7 +67,7 @@ const App = () => {
       </div>
 
       <div className="bg-white min-h-screen">
-        <div className="bg-black relative">
+        {/* <div className="bg-black relative">
           <img className="w-full" src="/supercar-lineup.jpg" alt="" />
           <div className="absolute inset-0 bg-gradient-to-b from-black opacity-80">
           <div className="absolute inset-0 flex flex-col justify-around items-center text-white font-bold text-5xl">
@@ -74,24 +75,24 @@ const App = () => {
             <div></div><div></div><div></div>
           </div>
           </div>
-        </div>
+        </div> */}
         
-        <div className="grid md:grid-cols-3 gap-3 lg:gap-10 px-5 lg:px-[100px] my-5 lg:my-7 items-center ">
-          <div className="bg-gray-100 border rounded-3xl flex justify-between px-4">
+        <div className="grid md:grid-cols-3 gap-3 lg:gap-10 px-5 lg:px-[100px] my-5 lg:my-7 items-center bg-gray-50 py-14">
+          <div className="bg-white shadow-md border rounded-3xl flex justify-between px-4">
             <CiDollar size={150}/>
             <div className="flex flex-col justify-evenly m-4">
               <div className="text-xl font-bold">All Inclusive Pricing</div>
               <div>Get everything you need in one convenient, transparent price.</div>
             </div>
           </div>
-          <div className="bg-gray-100 border  rounded-3xl flex justify-between px-4">
+          <div className="bg-white shadow-md border  rounded-3xl flex justify-between px-4">
             <CiDollar size={150}/>
             <div className="flex flex-col justify-around m-4">
               <div className="text-xl font-bold">All Inclusive Pricing</div>
               <div>Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.</div>
             </div>
           </div>
-          <div className="bg-gray-100 border  rounded-3xl flex justify-between px-4">
+          <div className="bg-white shadow-md border  rounded-3xl flex justify-between px-4">
             <CiDollar size={150}/>
             <div className="flex flex-col justify-around m-4">
               <div className="text-xl font-bold">All Inclusive Pricing</div>
@@ -100,8 +101,16 @@ const App = () => {
           </div>
         </div>
 
-
+        <div className="bg-gray-50 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 md:px-14">
+          <CarCard audi={true}/>
+          <CarCard/>
+          <CarCard/>
+          <CarCard/>
+          <CarCard/>
+        </div>
       </div>
+
+      
 
       
 
@@ -140,6 +149,10 @@ const App = () => {
     </div>
 
 
+
+    <div className="h-10"></div>
+
+
     <div className="bg-gray-200 grid sm:grid-cols-2 lg:grid-cols-10 p-10 lg:p-20 gap-10">
           
           {/* skyzone dealership */}
@@ -160,7 +173,7 @@ const App = () => {
 
           {/* company */}
           <div className="flex flex-col text-black gap-5 text-md col-span-2">
-            <div className="text-3xl font-bold">
+            <div className="text-2xl font-bold">
               Company
             </div>
             <div className="flex flex-col gap-2">
@@ -172,7 +185,7 @@ const App = () => {
 
           {/* working hours */}
           <div className="flex flex-col text-black gap-5 text-md col-span-2">
-            <div className="text-3xl font-bold">Working Hours</div>
+            <div className="text-2xl font-bold">Working Hours</div>
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-2">Mon - Fri: 9:00AM - 9:00PM</div>
               <div className="flex items-center gap-2">Sat: 9:00AM - 19:00PM</div>
@@ -182,7 +195,7 @@ const App = () => {
 
           {/* subscribe */}
           <div className="flex flex-col text-black gap-5 text-md col-span-3">
-            <div className="text-3xl font-bold">Subscription</div>
+            <div className="text-2xl font-bold">Subscription</div>
             <div className="flex flex-col gap-3">
               <div className="flex items-center">Subscribe your Email address for latest news & updates.</div>
               <input type="email" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-black focus:border-black block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Email" required />
@@ -208,69 +221,6 @@ const CarDetail =(props) =>{
   )
 }
 
-
-const CarCard = (props) => {
-  // var audiLink = "https://images.hindustantimes.com/auto/img/2023/09/18/1600x900/Audi_Q5_Limited_Edition-1_1695015301793_1695015306637.jpg";
-  var link = "https://www.amalgamcollection.com/cdn/shop/products/DSCF9341WIDEEDIT_2000x850_crop_center.jpg?v=1626887558";
-  return (
-      <div className="flex flex-col rounded-xl shadow-md bg-red-900 w-full">
-        <img className="rounded-t-xl flex-1 object-cover" src={link} alt="description" />
-        <div className="rounded-b-xl bg-white flex-2 p-5">
-          <div className="flex justify-between text-xl font-bold">
-            <div>
-              Ferrari Roma, 2024
-            </div>
-            <div className="font-black text-red-500 text-xl">
-              $200k
-            </div>
-          </div>
-          {/* <div className="bg-gray-100 rounded-lg mt-3 pl-3 pr-3 pt-2 pb-2 flex justify-evenly">
-            <div className="bg-white rounded-full h-10 flex justify-center items-center pl-4 pr-4 gap-1"><IoIosSpeedometer size={20} color="black"/>180</div>
-            <div className="bg-white rounded-full h-10 flex justify-center items-center pl-4 pr-4 gap-1"><BsFillFuelPumpFill size={20} color="orange"/>8.2</div>
-            <div className="bg-white rounded-full h-10 flex justify-center items-center pl-4 pr-4 gap-1"><MdAirlineSeatReclineNormal size={20} color="brown"/>2</div>
-            <div className="bg-white rounded-full h-10 flex justify-center items-center pl-4 pr-4 gap-1"><ImPower size={20} color="red"/>611</div>
-          </div> */}
-          <div className="font-sans pt-2.5">
-            The Italian elegance makes a comeback.
-            The Ferrari Roma, the new mid-front-engined 2+ coupé, 
-            features refined proportions and timeless design.
-          </div>
-        </div>
-      </div>
-  )
-}
-const CarCard2 = (props) => {
-  var audiLink = "https://images.hindustantimes.com/auto/img/2023/09/18/1600x900/Audi_Q5_Limited_Edition-1_1695015301793_1695015306637.jpg";
-  // var link = "https://www.amalgamcollection.com/cdn/shop/products/DSCF9341WIDEEDIT_2000x850_crop_center.jpg?v=1626887558";
-  return (
-      <div className="flex flex-col rounded-xl shadow-md bg-red-900">
-        <img className="rounded-t-xl flex-1 h-full max-h-56 object-cover" src={audiLink} alt="description" />
-        <div className="rounded-b-xl bg-white flex-2 p-5">
-          <div className="flex justify-between text-xl font-bold">
-            <div>
-              Ferrari Roma, 2024
-            </div>
-            <div className="font-black text-red-500 text-xl">
-              $200k
-            </div>
-          </div>
-          {/* <div className="bg-gray-100 rounded-lg mt-3 pl-3 pr-3 pt-2 pb-2 flex justify-evenly">
-            <div className="bg-white rounded-full h-10 flex justify-center items-center pl-4 pr-4 gap-1"><IoIosSpeedometer size={20} color="black"/>180</div>
-            <div className="bg-white rounded-full h-10 flex justify-center items-center pl-4 pr-4 gap-1"><BsFillFuelPumpFill size={20} color="orange"/>8.2</div>
-            <div className="bg-white rounded-full h-10 flex justify-center items-center pl-4 pr-4 gap-1"><MdAirlineSeatReclineNormal size={20} color="brown"/>2</div>
-            <div className="bg-white rounded-full h-10 flex justify-center items-center pl-4 pr-4 gap-1"><ImPower size={20} color="red"/>611</div>
-          </div> */}
-          <div className="font-sans pt-2.5">
-            The Italian elegance makes a comeback.
-            The Ferrari Roma, the new mid-front-engined 2+ coupé, 
-            features refined proportions and timeless design.
-          </div>
-        </div>
-      </div>
-
-      
-  )
-}
 
 
 

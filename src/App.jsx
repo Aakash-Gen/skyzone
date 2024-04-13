@@ -10,8 +10,11 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 
-
+// https://www.pexels.com/video/video-of-a-luxury-sports-car-5309351/
+// https://www.pexels.com/video/a-lamborghini-car-on-the-road-7727416/
 // https://react-icons.github.io/react-icons/search/#q=power
+// https://www.pexels.com/video/light-sea-road-landscape-20153917/
+// https://www.pexels.com/video/orange-supercar-on-road-14052141/
 
 const App = () => {
   var link = "https://www.amalgamcollection.com/cdn/shop/products/DSCF9341WIDEEDIT_2000x850_crop_center.jpg?v=1626887558";
@@ -35,7 +38,8 @@ const App = () => {
       </div>
 
       <div className="bg-black relative">
-        <div className="h-[100vh] bg-[url('https://www.hdcarwallpapers.com/walls/ferrari_roma_2020_5k_6-HD.jpg')] bg-cover flex justify-center items-center text-white font-bold font-sans opacity-40"></div>
+        <div className="h-[100vh] bg-[url('https://www.the-lowdown.com/wp-content/uploads/2021/11/mclaren-720s-michelin-front-quarter-roller-3-landscape.jpg')] bg-cover flex justify-center items-center text-white font-bold font-sans opacity-50"></div>
+        {/* <img className="h-[100vh] w-full object-cover  opacity-80" src="/pexels-mustafa-akku-14052141Original-ezgif.com-video-to-gif-converter.gif"></img> */}
         <div className="absolute inset-0 flex flex-col justify-evenly items-center text-white font-bold text-4xl">
           <div></div>
           <div>FERRARI ROMA - LA NUOVA DOLCE VITA</div>
@@ -102,14 +106,14 @@ const App = () => {
       
 
 
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen mt-10">
       <div className="text-center mb-10">
         <div className="text-black font-semibold text-2xl mb-2">Supercar Models</div>
         <div className="text-black font-bold text-4xl mb-2">Explore Our Exotic collection</div>
         <div className="text-gray-500 ">Indulge in the ultimate driving experience with our exquisite selection of supercars</div>
       </div>
-      <div className="grid md:grid-cols-3 sm:grid-col-1 gap-10 bg-white ">
-        <div className="flex flex-col justify-center items-center gap-2">
+      <div className="grid md:grid-cols-4 sm:grid-col-3 gap-4">
+        <div className="flex flex-col justify-center items-center gap-2 md:col-span-1 sm:col-span-1">
           <CarTab name="LaFerrari"/>
           <CarTab name="Mclaren 720s"/>
           <CarTab name="Ferrari Roma"/>
@@ -118,10 +122,10 @@ const App = () => {
           <CarTab name="Bugatti Chiron"/>
           <CarTab name="Aston Martin Valhalla"/>
         </div>
-        <div className="flex items-center">
-          <img className="flex justify-center " src="/laferrari-jaguar-cars-enzo-ferrari-ferrari-removebg-preview.png" alt="car" />
+        <div className="flex items-center md:col-span-2 sm:col-span-1">
+          <img className="flex justify-center h-98 w-256" src="/laferrari-jaguar-cars-enzo-ferrari-ferrari-removebg-preview.png" alt="car" />
         </div>
-        <div className=" flex justify-center items-center">
+        <div className=" flex justify-center items-center md:col-span-1 sm:col-span-1">
           <div className=" bg-gray-50 flex flex-col border-2 border-gray-500 w-[250px] h-auto">
           <CarDetail title="Brand" desc="Ferrari" />
           <CarDetail title="Model" desc="LaFerrari" /> 

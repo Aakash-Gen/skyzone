@@ -7,6 +7,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import CarCard from "./components/CarCard";
 import Header from "./components/Header";
+import CarInfo from "./components/CarInfo";
 
 // https://www.pexels.com/video/video-of-a-luxury-sports-car-5309351/
 // https://www.pexels.com/video/a-lamborghini-car-on-the-road-7727416/
@@ -86,46 +87,7 @@ const App = () => {
         </div>
       </div>
 
-      
-
-      
-
-
-    <div id="compare" className="bg-white my-14">
-      <div className="text-center mb-10">
-        <div className="text-black font-semibold text-2xl mb-2">Supercar Models</div>
-        <div className="text-black font-bold text-4xl mb-2">Explore Our Exotic collection</div>
-        <div className="text-gray-500 ">Indulge in the ultimate driving experience with our exquisite selection of supercars</div>
-      </div>
-      <div className="grid md:grid-cols-4 sm:grid-col-3 gap-4">
-        <div className="flex flex-col justify-center items-center gap-2 md:col-span-1 sm:col-span-1">
-          <CarTab name="LaFerrari" />
-          <CarTab name="Mclaren 720s"/>
-          <CarTab name="Ferrari Roma"/>
-          <CarTab name="Porsche 911"/>
-          <CarTab name="Lamborghini Revuelto"/>
-          <CarTab name="Bugatti Chiron"/>
-          <CarTab name="Aston Martin Valhalla"/>
-        </div>
-        <div className="flex items-center md:col-span-2 sm:col-span-1">
-          {/* <img className="flex justify-center h-98 w-256" src="/laferrari-jaguar-cars-enzo-ferrari-ferrari-removebg-preview.png" alt="car" /> */}
-          <img className="flex justify-center h-full w-full " src="/mclaren.png" alt="car" />
-        </div>
-        <div className=" flex justify-center items-center md:col-span-1 sm:col-span-1">
-          <div className=" bg-gray-50 flex flex-col border-2 border-gray-500 w-[250px] h-auto">
-          <CarDetail title="Brand" desc="Ferrari" />
-          <CarDetail title="Model" desc="LaFerrari" /> 
-          <CarDetail title="Year" desc="2013" />   
-          <CarDetail title="HP" desc="1036" />   
-          <CarDetail title="0-60" desc="2.4s" />
-          <div className="text-center font-bold text-4xl p-4">$3,057,308</div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
+      <CarInfo/>
       {/* footer */}
       <div id="about-us" className="bg-gray-200 grid  md:grid-cols-2 lg:grid-cols-10 p-10 lg:p-20 gap-10">
           
@@ -181,19 +143,6 @@ const App = () => {
   )
 }
 
-const CarTab = (props) => {
-  return(
-    <div className="bg-gray-200 py-[15px] w-[250px] px-7 text-black font-semibold text-[18px] font-poppins">{props.name}</div>
-  )
-}
-const CarDetail =(props) =>{
-  return(
-    <div className="flex justify-evenly gap-10 border-b-2 border-gray-500 p-4 font-semibold font-poppins">
-            <div>{props.title}</div>
-            <div>{props.desc}</div>
-    </div>
-  )
-}
 
 {/* <div className="bg-black relative">
           <img className="w-full" src="/supercar-lineup.jpg" alt="" />

@@ -72,3 +72,5 @@ const CarCard2 = (props) => {
       
   )
 }
+
+export default CollectionPage;

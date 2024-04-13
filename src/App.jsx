@@ -10,6 +10,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import CarCard from "./components/CarCard";
+import Header from "./components/Header";
 
 // https://www.pexels.com/video/video-of-a-luxury-sports-car-5309351/
 // https://www.pexels.com/video/a-lamborghini-car-on-the-road-7727416/
@@ -24,20 +25,7 @@ const App = () => {
 
   return (
     <>
-    {/* <div className="flex flex-col"> */}
-      <div className="fixed top-0 w-full h-16 bg-[#0A0A0A] flex justify-between items-center pl-6 pr-6 z-10"> 
-        <SiFerrari size={35} color="white"/>
-      <div className="flex gap-12">
-        <div className="text-white hover:cursor-pointer hover:underline">Home</div>
-        <div className="text-white" >Collection</div>
-        {/* <div className="text-white" >Reviews</div> */}
-        <div className="text-white" >About Us</div>
-      </div>
-      <div className="text-white">
-        Contact us
-      </div>
-      </div>
-
+      <Header/>
       <div className="bg-black relative">
         <div className="h-[100vh] bg-[url('https://www.the-lowdown.com/wp-content/uploads/2021/11/mclaren-720s-michelin-front-quarter-roller-3-landscape.jpg')] bg-cover flex justify-center items-center text-white font-bold font-sans opacity-50"></div>
         {/* <img className="h-[100vh] w-full object-cover  opacity-80" src="/pexels-mustafa-akku-14052141Original-ezgif.com-video-to-gif-converter.gif"></img> */}
@@ -110,11 +98,6 @@ const App = () => {
         </div>
       </div>
 
-      
-
-      
-
-
     <div className="bg-white min-h-screen mt-10">
       <div className="text-center mb-10">
         <div className="text-black font-semibold text-2xl mb-2">Supercar Models</div>
@@ -132,7 +115,8 @@ const App = () => {
           <CarTab name="Aston Martin Valhalla"/>
         </div>
         <div className="flex items-center md:col-span-2 sm:col-span-1">
-          <img className="flex justify-center h-98 w-256" src="/laferrari-jaguar-cars-enzo-ferrari-ferrari-removebg-preview.png" alt="car" />
+          {/* <img className="flex justify-center h-98 w-256" src="/laferrari-jaguar-cars-enzo-ferrari-ferrari-removebg-preview.png" alt="car" /> */}
+          <img className="flex justify-center h-98 w-256" src="/mclaren720s.png" alt="car" />
         </div>
         <div className=" flex justify-center items-center md:col-span-1 sm:col-span-1">
           <div className=" bg-gray-50 flex flex-col border-2 border-gray-500 w-[250px] h-auto">

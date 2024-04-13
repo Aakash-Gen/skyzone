@@ -106,7 +106,7 @@ const App = () => {
       </div>
       <div className="grid md:grid-cols-4 sm:grid-col-3 gap-4">
         <div className="flex flex-col justify-center items-center gap-2 md:col-span-1 sm:col-span-1">
-          <CarTab name="LaFerrari"/>
+          <CarTab name="LaFerrari" />
           <CarTab name="Mclaren 720s"/>
           <CarTab name="Ferrari Roma"/>
           <CarTab name="Porsche 911"/>
@@ -116,7 +116,7 @@ const App = () => {
         </div>
         <div className="flex items-center md:col-span-2 sm:col-span-1">
           {/* <img className="flex justify-center h-98 w-256" src="/laferrari-jaguar-cars-enzo-ferrari-ferrari-removebg-preview.png" alt="car" /> */}
-          <img className="flex justify-center h-98 w-256" src="/mclaren720s.png" alt="car" />
+          <img className="flex justify-center h-full w-full " src="/mclaren.png" alt="car" />
         </div>
         <div className=" flex justify-center items-center md:col-span-1 sm:col-span-1">
           <div className=" bg-gray-50 flex flex-col border-2 border-gray-500 w-[250px] h-auto">

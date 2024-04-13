@@ -8,6 +8,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import CarCard from "./components/CarCard";
 import Header from "./components/Header";
 import CarInfo from "./components/CarInfo";
+import { MdLocationSearching } from "react-icons/md";
+import { FaCar } from "react-icons/fa";
 
 // https://www.pexels.com/video/video-of-a-luxury-sports-car-5309351/
 // https://www.pexels.com/video/a-lamborghini-car-on-the-road-7727416/
@@ -19,6 +21,8 @@ const App = () => {
   var link = "https://www.amalgamcollection.com/cdn/shop/products/DSCF9341WIDEEDIT_2000x850_crop_center.jpg?v=1626887558";
   var porscheBig = "https://images.pistonheads.com/nimg/47438/blobid0.jpg";
   var ferrariBig = "https://bicollection.ch/wp-content/uploads/2021/06/FerrariRoma-GZ9A2523022.jpg";
+  var ferrariCard = "https://www.amalgamcollection.com/cdn/shop/products/DSCF9341WIDEEDIT_2000x850_crop_center.jpg?v=1626887558";
+
 
   return (
     <>
@@ -53,37 +57,99 @@ const App = () => {
 
       <div className="bg-gray-50 mb-10 py-8">
         <div className=" grid md:grid-cols-3 gap-3 lg:gap-10 px-5 lg:px-[100px] items-center mb-4">
-        <div className="bg-white h-full shadow-md border rounded-3xl flex justify-between px-4 py-4 items-center">
-            <CiDollar size={150} className="max-h-24"/>
+        <div className="bg-white h-full shadow-md border rounded-3xl flex justify-start px-4 py-4 items-center gap-3">
+            <div className="pl-4 text-6xl sm:text-5xl">
+              <MdLocationSearching/>
+            </div>
             <div className="flex flex-col justify-evenly m-4">
-              <div className="text-xl font-bold">All Inclusive Pricing</div>
-              <div>Get everything you need in one convenient, transparent price.</div>
+              <div className="text-xl font-bold">Explore and Select</div>
+              <div>Explore our exotic collection and find the car best suited for you.</div>
             </div>
           </div>
-          <div className="bg-white h-full shadow-md border rounded-3xl flex justify-between px-4 py-4 items-center">
-            <CiDollar size={150} className="max-h-24"/>
+          <div className="bg-white h-full shadow-md border rounded-3xl flex justify-start px-4 py-4 items-center gap-3">
+          <div className="pl-4 text-6xl sm:text-5xl">
+              <CiDollar/>
+            </div>
             <div className="flex flex-col justify-evenly m-4">
-              <div className="text-xl font-bold">All Inclusive Pricing</div>
-              <div>Get everything you need in one convenient, transparent price.</div>
+              <div className="text-xl font-bold">Order</div>
+              <div>Order hassle free by contacting us via phone or mail.</div>
             </div>
           </div>
-          <div className="bg-white h-full shadow-md border rounded-3xl flex justify-between px-4 py-4 items-center">
-            <CiDollar size={150} className="max-h-24"/>
+          <div className="bg-white h-full shadow-md border rounded-3xl flex justify-start px-4 py-4 items-center gap-3">
+
+            <div className="pl-4 text-6xl sm:text-5xl">
+              <FaCar/>
+            </div>
             <div className="flex flex-col justify-evenly m-4">
-              <div className="text-xl font-bold">All Inclusive Pricing</div>
-              <div>Get everything you need in one convenient, transparent price.</div>
+              <div className="text-xl font-bold">Get Your Dream Car</div>
+              <div>Get your car delivered to your door.</div>
             </div>
           </div>
           
         </div>
 
-        <div id="collection" className="bg-gray-50 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 md:px-14">
-          <CarCard audi={true}/>
-          <CarCard/>
-          <CarCard/>
-          <CarCard/>
-          <CarCard/>
-          <CarCard/>
+        <div id="collection" className="bg-gray-50 grid md:grid-cols-2 xl:grid-cols-3 gap-4 p-4 md:px-14">
+          <CarCard 
+            name="Ferrari Roma"
+            price="$3,057,308"
+            speed="200"
+            mileage="20"
+            seats="2"
+            power="1036"
+            description="The Ferrari Roma, with its distinctive flair and style, features refined proportions and timeless design."
+            image={ferrariCard}
+          />
+          <CarCard 
+            name="McLaren 720s"
+            price="$230k"
+            speed="220"
+            mileage="5"
+            seats="2"
+            power="700"
+            description="The McLaren 720S embodies our relentless quest to push the limits of possibility. Lighter, stronger, faster. "
+            image="https://imgd.aeplcdn.com/1920x1080/n/cw/ec/95143/exterior-left-front-three-quarter.jpeg?q=80&q=80"
+          />
+          <CarCard 
+            name="LaFerrari"
+            price="$1,416,362"
+            speed="217"
+            mileage="12"
+            seats="2"
+            power="949"
+            description="LaFerrari represents Ferrari's most ambitious project yet to push the boundaries of technology on a road car."
+            image="https://cimg0.ibsrv.net/ibimg/hgm/1600x900-1/100/491/ferrari-laferrari-fxx-k_100491948.jpg"
+          />
+          <CarCard 
+            name="Porsche 911"
+            price="$115,100"
+            speed="193"
+            mileage="18"
+            seats="4"
+            power="379"
+            description="The Porsche 911 is a timeless sports car that combines performance, luxury, and style in a unique package."
+            image="https://www.autocar.co.uk/sites/autocar.co.uk/files/1-porsche-911-gt3-2021-rt-hero-front.jpg"
+          />
+          <CarCard 
+          name="Lamborghini Revuelto"
+          price="$500k"
+          speed="220"
+          mileage="15"
+          seats="2"
+          power="819"
+          description="The Lamborghini Revuelto combines raw power with Italian flair, offering an exhilarating driving experience like no other."
+          
+            image="https://img.etimg.com/thumb/width-1200,height-900,imgsize-2042443,resizemode-75,msid-105789918/industry/auto/cars-uvs/revuelto-hybrid-lamborghinis-most-expensive-model-in-india-sold-out-till-2026.jpg"
+          />
+          <CarCard 
+            name="Bugatti Chiron"
+            price="$3,000,000"
+            speed="261"
+            mileage="9"
+            seats="2"
+            power="1479"
+            description="The Bugatti Chiron is the epitome of engineering excellence and unparalleled luxury, setting new benchmarks in performance."
+            image="https://cdn.motor1.com/images/mgl/xW8K2/s1/bugatti-chiron-pur-sport.webp"
+          />
         </div>
       </div>
 

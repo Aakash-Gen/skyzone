@@ -1,9 +1,5 @@
 // absolute, relative, inset, pointer-event-none
-import { IoIosSpeedometer } from "react-icons/io";
-import { BsFillFuelPumpFill } from "react-icons/bs";
-import { MdAirlineSeatReclineNormal } from "react-icons/md";
-import { ImPower } from "react-icons/im";
-import { flushSync } from "react-dom";
+
 import { SiFerrari } from "react-icons/si";
 import { CiDollar } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -26,17 +22,17 @@ const App = () => {
   return (
     <>
       <Header/>
-      <div className="bg-black relative">
-        <div className="h-[100vh] bg-[url('https://www.the-lowdown.com/wp-content/uploads/2021/11/mclaren-720s-michelin-front-quarter-roller-3-landscape.jpg')] bg-cover flex justify-center items-center text-white font-bold font-sans opacity-50"></div>
-        {/* <img className="h-[100vh] w-full object-cover  opacity-80" src="/pexels-mustafa-akku-14052141Original-ezgif.com-video-to-gif-converter.gif"></img> */}
+      <div id="home" className="bg-black relative">
+        {/* <div className="h-[100vh] bg-[url('https://www.the-lowdown.com/wp-content/uploads/2021/11/mclaren-720s-michelin-front-quarter-roller-3-landscape.jpg')] bg-cover flex justify-center items-center text-white font-bold font-sans opacity-50"></div> */}
+        <img className="h-[100vh] w-full object-cover  opacity-80" src="https://www.the-lowdown.com/wp-content/uploads/2021/11/mclaren-720s-michelin-front-quarter-roller-3-landscape.jpg"></img>
         <div className="absolute inset-0 flex flex-col justify-evenly items-center text-white font-bold text-4xl">
           <div></div>
           <div>FERRARI ROMA - LA NUOVA DOLCE VITA</div>
         </div>
       </div>
 
-      <div className="bg-white h-[85vh] flex flex-col-reverse lg:grid lg:grid-cols-2 lg:px-[170px] lg:py-20 gap-2 lg:gap-10">
-        <div className="flex flex-col justify-center gap-2 lg:gap-5 mx-4 my-2">
+      <div className="bg-white p-10 lg:h-[62vh] flex flex-col-reverse lg:grid lg:grid-cols-2 lg:px-[170px] lg:py-20 gap-6 lg:gap-10">
+        <div className="flex flex-col justify-center gap-2 lg:gap-5 ">
           <div className="text-3xl font-black font-sans">
             Embodying la dolce vita
           </div>
@@ -49,48 +45,40 @@ const App = () => {
             experience, where elegance meets exhilarating speed on every journey.
           </div>
         </div>
-        <div className="bg-blue-300">
-          <img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/news/2023/10_16_revuelto/cover_m.jpg" alt="" className="h-full object-cover max-h-max"/>
+        <div className="bg-red-500 object-cover ">
+          <img className="object-cover h-[40vw] lg:h-full w-full min-h-[300px]" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/news/2023/10_16_revuelto/cover_m.jpg" alt="" />
         </div>
       </div>
 
-      <div className="bg-white min-h-screen">
-        {/* <div className="bg-black relative">
-          <img className="w-full" src="/supercar-lineup.jpg" alt="" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black opacity-80">
-          <div className="absolute inset-0 flex flex-col justify-around items-center text-white font-bold text-5xl">
-            <div>FERRARI ROMA - LA NUOVA DOLCE VITA</div>
-            <div></div><div></div><div></div>
-          </div>
-          </div>
-        </div> */}
-        
-        <div className="grid md:grid-cols-3 gap-3 lg:gap-10 px-5 lg:px-[100px] my-5 lg:my-7 items-center bg-gray-50 py-14">
-          <div className="bg-white shadow-md border rounded-3xl flex justify-between px-4">
-            <CiDollar size={150}/>
+      <div className="bg-gray-50 mb-10 py-8">
+        <div className=" grid md:grid-cols-3 gap-3 lg:gap-10 px-5 lg:px-[100px] items-center mb-4">
+        <div className="bg-white h-full shadow-md border rounded-3xl flex justify-between px-4 py-4 items-center">
+            <CiDollar size={150} className="max-h-24"/>
             <div className="flex flex-col justify-evenly m-4">
               <div className="text-xl font-bold">All Inclusive Pricing</div>
               <div>Get everything you need in one convenient, transparent price.</div>
             </div>
           </div>
-          <div className="bg-white shadow-md border  rounded-3xl flex justify-between px-4">
-            <CiDollar size={150}/>
-            <div className="flex flex-col justify-around m-4">
+          <div className="bg-white h-full shadow-md border rounded-3xl flex justify-between px-4 py-4 items-center">
+            <CiDollar size={150} className="max-h-24"/>
+            <div className="flex flex-col justify-evenly m-4">
               <div className="text-xl font-bold">All Inclusive Pricing</div>
-              <div>Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.</div>
+              <div>Get everything you need in one convenient, transparent price.</div>
             </div>
           </div>
-          <div className="bg-white shadow-md border  rounded-3xl flex justify-between px-4">
-            <CiDollar size={150}/>
-            <div className="flex flex-col justify-around m-4">
+          <div className="bg-white h-full shadow-md border rounded-3xl flex justify-between px-4 py-4 items-center">
+            <CiDollar size={150} className="max-h-24"/>
+            <div className="flex flex-col justify-evenly m-4">
               <div className="text-xl font-bold">All Inclusive Pricing</div>
-              <div>Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.</div>
+              <div>Get everything you need in one convenient, transparent price.</div>
             </div>
           </div>
+          
         </div>
 
-        <div className="bg-gray-50 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 md:px-14">
+        <div id="collection" className="bg-gray-50 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 md:px-14">
           <CarCard audi={true}/>
+          <CarCard/>
           <CarCard/>
           <CarCard/>
           <CarCard/>
@@ -98,7 +86,12 @@ const App = () => {
         </div>
       </div>
 
-    <div className="bg-white min-h-screen mt-10">
+      
+
+      
+
+
+    <div id="compare" className="bg-white my-14">
       <div className="text-center mb-10">
         <div className="text-black font-semibold text-2xl mb-2">Supercar Models</div>
         <div className="text-black font-bold text-4xl mb-2">Explore Our Exotic collection</div>
@@ -133,14 +126,11 @@ const App = () => {
     </div>
 
 
-
-    <div className="h-10"></div>
-
-
-    <div className="bg-gray-200 grid sm:grid-cols-2 lg:grid-cols-10 p-10 lg:p-20 gap-10">
+      {/* footer */}
+      <div id="about-us" className="bg-gray-200 grid  md:grid-cols-2 lg:grid-cols-10 p-10 lg:p-20 gap-10">
           
           {/* skyzone dealership */}
-          <div className="flex flex-col text-black gap-6 text-md col-span-3">
+          <div className="flex flex-col text-black gap-6 text-md lg:col-span-3">
             <div className="text-3xl font-black">
               Skyzone Dealership
             </div>
@@ -156,7 +146,7 @@ const App = () => {
           </div>
 
           {/* company */}
-          <div className="flex flex-col text-black gap-5 text-md col-span-2">
+          <div className="flex flex-col text-black gap-5 text-md lg:col-span-2">
             <div className="text-2xl font-bold">
               Company
             </div>
@@ -168,7 +158,7 @@ const App = () => {
           </div>
 
           {/* working hours */}
-          <div className="flex flex-col text-black gap-5 text-md col-span-2">
+          <div className="flex flex-col text-black gap-5 text-md lg:col-span-2">
             <div className="text-2xl font-bold">Working Hours</div>
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-2">Mon - Fri: 9:00AM - 9:00PM</div>
@@ -178,7 +168,7 @@ const App = () => {
           </div>
 
           {/* subscribe */}
-          <div className="flex flex-col text-black gap-5 text-md col-span-3">
+          <div className="flex flex-col text-black gap-5 text-md lg:col-span-3">
             <div className="text-2xl font-bold">Subscription</div>
             <div className="flex flex-col gap-3">
               <div className="flex items-center">Subscribe your Email address for latest news & updates.</div>
@@ -205,7 +195,15 @@ const CarDetail =(props) =>{
   )
 }
 
-
+{/* <div className="bg-black relative">
+          <img className="w-full" src="/supercar-lineup.jpg" alt="" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black opacity-80">
+          <div className="absolute inset-0 flex flex-col justify-around items-center text-white font-bold text-5xl">
+            <div>FERRARI ROMA - LA NUOVA DOLCE VITA</div>
+            <div></div><div></div><div></div>
+          </div>
+          </div>
+        </div> */}
 
 
 

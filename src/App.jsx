@@ -22,9 +22,9 @@ const App = () => {
   return (
     <>
       <Header/>
-      <div className="bg-black relative">
-        <div className="h-[100vh] bg-[url('https://www.the-lowdown.com/wp-content/uploads/2021/11/mclaren-720s-michelin-front-quarter-roller-3-landscape.jpg')] bg-cover flex justify-center items-center text-white font-bold font-sans opacity-50"></div>
-        {/* <img className="h-[100vh] w-full object-cover  opacity-80" src="/pexels-mustafa-akku-14052141Original-ezgif.com-video-to-gif-converter.gif"></img> */}
+      <div id="home" className="bg-black relative">
+        {/* <div className="h-[100vh] bg-[url('https://www.the-lowdown.com/wp-content/uploads/2021/11/mclaren-720s-michelin-front-quarter-roller-3-landscape.jpg')] bg-cover flex justify-center items-center text-white font-bold font-sans opacity-50"></div> */}
+        <img className="h-[100vh] w-full object-cover  opacity-80" src="https://www.the-lowdown.com/wp-content/uploads/2021/11/mclaren-720s-michelin-front-quarter-roller-3-landscape.jpg"></img>
         <div className="absolute inset-0 flex flex-col justify-evenly items-center text-white font-bold text-4xl">
           <div></div>
           <div>FERRARI ROMA - LA NUOVA DOLCE VITA</div>
@@ -76,7 +76,7 @@ const App = () => {
           
         </div>
 
-        <div className="bg-gray-50 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 md:px-14">
+        <div id="collection" className="bg-gray-50 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 md:px-14">
           <CarCard audi={true}/>
           <CarCard/>
           <CarCard/>
@@ -91,7 +91,7 @@ const App = () => {
       
 
 
-    <div className="bg-white my-14">
+    <div id="compare" className="bg-white my-14">
       <div className="text-center mb-10">
         <div className="text-black font-semibold text-2xl mb-2">Supercar Models</div>
         <div className="text-black font-bold text-4xl mb-2">Explore Our Exotic collection</div>
@@ -127,7 +127,7 @@ const App = () => {
 
 
       {/* footer */}
-      <div className="bg-gray-200 grid  md:grid-cols-2 lg:grid-cols-10 p-10 lg:p-20 gap-10">
+      <div id="about-us" className="bg-gray-200 grid  md:grid-cols-2 lg:grid-cols-10 p-10 lg:p-20 gap-10">
           
           {/* skyzone dealership */}
           <div className="flex flex-col text-black gap-6 text-md lg:col-span-3">

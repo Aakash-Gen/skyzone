@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-scroll";
 
 function CarInfo() {
 
@@ -34,7 +35,7 @@ function CarInfo() {
         </div>
         <div className="flex items-center lg:col-span-2" >
           {selectedCar && (
-          <img className="flex justify-center h-full w-full " src={`/${selectedCar.model.toLowerCase()}.png`} alt="car" />
+          <img id="image" className="flex justify-center h-full w-full " src={`/${selectedCar.model.toLowerCase()}.png`} alt="car" />
           )}
         </div>
         <div className=" flex justify-center items-center lg:col-span-1">
@@ -55,7 +56,7 @@ function CarInfo() {
 
 const CarTab = ({name , onClick}) => {
     return(
-      <button onClick={onClick} className="bg-gray-200 py-[15px] w-[250px] px-7 text-black font-semibold text-[18px] font-poppins shadow-md hover:bg-black hover:text-white">{name}</button>
+      <Link to="image" spy={true} smooth={true} duration={500} offset={-70} onClick={onClick} className="bg-gray-200 py-[15px] w-[250px] px-7 text-black font-semibold text-[18px] font-poppins shadow-md hover:bg-black hover:text-white">{name}</Link>
     )
   }
   const CarDetail =(props) =>{

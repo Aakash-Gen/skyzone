@@ -30,9 +30,11 @@ const App = () => {
       <div id="home" className="bg-black relative">
         {/* <div className="h-[100vh] bg-[url('https://www.the-lowdown.com/wp-content/uploads/2021/11/mclaren-720s-michelin-front-quarter-roller-3-landscape.jpg')] bg-cover flex justify-center items-center text-white font-bold font-sans opacity-50"></div> */}
         <img className="h-[100vh] w-full object-cover  opacity-80" src="https://www.the-lowdown.com/wp-content/uploads/2021/11/mclaren-720s-michelin-front-quarter-roller-3-landscape.jpg"></img>
-        <div className="absolute inset-0 flex flex-col justify-evenly items-center text-white font-bold text-4xl">
+        {/* <img className="h-[100vh] w-full object-cover  opacity-80" src="https://i.pinimg.com/originals/01/dd/16/01dd16fac98de8b86188fb29d1ecbce0.gif"></img> */}
+        <div className="absolute inset-0 flex flex-col justify-evenly items-center text-white font-bold text-3xl sm:text-4xl">
           <div></div>
-          <div>FERRARI ROMA - LA NUOVA DOLCE VITA</div>
+          <div className="text-center sm:text-left p-2">SKYZONE - CAR OF YOUR DREAMS</div>
+          <div className="flex sm:hidden h-6"></div>
         </div>
       </div>
 

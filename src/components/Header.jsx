@@ -24,7 +24,7 @@ function Header() {
           <AiOutlineClose fontSize={28} className="text-white sm:hidden cursor-pointer" onClick={() => setToggleMenu(false)} />
         )}
         {toggleMenu && (
-          <div className=' gap-4 fixed -right-2 -top-0 p-3 w-[30vw] h-screen shadow-2xl sm:hidden list-none
+          <div className=' gap-4 fixed -right-2 -top-0 p-3 w-[35vw] h-screen shadow-2xl sm:hidden list-none
           flex flex-col justify-start items-end rounded-md bg-gray-300 bg-glass text-black animate-slide-in'>
             <AiOutlineClose color="black" size={28} className="hover:cursor-pointer" onClick={() => setToggleMenu(false)}/>
             <Link to="Collection" spy={true} smooth={true} duration={500} offset={-70}  onClick={()=> setToggleMenu(false)} className='hover:cursor-pointer justify-center  mt-2 py-1.5 px-4 w-full text-md font-medium' >Collection</Link>

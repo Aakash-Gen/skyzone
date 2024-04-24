@@ -56,7 +56,7 @@ function CarInfo() {
 
 const CarTab = ({name , onClick}) => {
     return(
-      <Link to="image" spy={true} smooth={true} duration={500} offset={-70} onClick={onClick} className="bg-gray-200 py-[15px] w-[250px] px-7 text-black font-semibold text-[18px] font-poppins shadow-md hover:bg-black hover:text-white">{name}</Link>
+      <Link to="image" spy={true} smooth={true} duration={500} offset={-70} onClick={onClick} className="bg-gray-200 py-[15px] w-[250px] px-7 text-black font-semibold text-[18px] font-poppins shadow-md hover:cursor-pointer hover:bg-black hover:text-white">{name}</Link>
     )
   }
   const CarDetail =(props) =>{

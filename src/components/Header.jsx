@@ -27,9 +27,9 @@ function Header() {
           <div className=' gap-4 fixed -right-2 -top-0 p-3 w-[35vw] h-screen shadow-2xl sm:hidden list-none
           flex flex-col justify-start items-end rounded-md bg-gray-300 bg-glass text-black animate-slide-in'>
             <AiOutlineClose color="black" size={28} className="hover:cursor-pointer" onClick={() => setToggleMenu(false)}/>
-            <Link to="Collection" spy={true} smooth={true} duration={500} offset={-70}  onClick={()=> setToggleMenu(false)} className='hover:cursor-pointer justify-center  mt-2 py-1.5 px-4 w-full text-md font-medium' >Collection</Link>
-            <Link to="Reviews" spy={true} smooth={true} duration={500} offset={-70}  onClick={()=> setToggleMenu(false)} className='hover:cursor-pointer justify-center  mt-2 py-1.5 px-4 w-full text-md font-medium'>Reviews</Link>
-            <Link to="About Us" spy={true} smooth={true} duration={500} offset={-70}  onClick={()=> setToggleMenu(false)} className='hover:cursor-pointer justify-center mt-2 py-1.5 px-4 w-full text-md font-medium'>About Us</Link>
+            <Link to="collection" spy={true} smooth={true} duration={500} offset={-70}  onClick={()=> setToggleMenu(false)} className='hover:cursor-pointer justify-center  mt-2 py-1.5 px-4 w-full text-md font-medium' >Collection</Link>
+            <Link to="compare" spy={true} smooth={true} duration={500} offset={-70}  onClick={()=> setToggleMenu(false)} className='hover:cursor-pointer justify-center  mt-2 py-1.5 px-4 w-full text-md font-medium'>Compare</Link>
+            <Link to="about-us" spy={true} smooth={true} duration={500} offset={-70}  onClick={()=> setToggleMenu(false)} className='hover:cursor-pointer justify-center mt-2 py-1.5 px-4 w-full text-md font-medium'>About Us</Link>
           </div>
         )}
       </div>
